@@ -1,0 +1,19 @@
+.div-main{
+    margin: 20px;
+}
+.div-option{
+    margin: 20px;
+}
+.option{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: fit-content;
+    border: 2px solid black;
+}
+.div-correct-option{
+    margin: 20px;
+}
+.div-submit{
+    margin: 20px;
+}
