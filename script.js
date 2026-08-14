@@ -62,5 +62,5 @@ option.addEventListener("click" , (e) =>{
 })
 submit.addEventListener("click" , () =>{
     index++
-    displayQuestion()
+    displayQuestion(index)
 })
