@@ -39,6 +39,7 @@ let questionBank = [
 function displayQuestion(index) {
     let currentQuestion = questionBank[index]
     question.innerText = currentQuestion.question
+    correctOption.innerHTML = ""
     option.innerHTML = ""
     currentQuestion.option.forEach((optionDisplay) => {
         option.innerHTML += `<button class="option">${optionDisplay}</button>`
@@ -50,7 +51,7 @@ option.addEventListener("click" , (e) =>{
         let selectedOption = e.target.innerText
         console.log(selectedOption)
         let correctAnswer = questionBank[index].correctOption
-        console.log(correctOption)
+        console.log(correctAnswer)
         if (selectedOption === correctAnswer) {
             correctOption.innerText = "correct"
         }
