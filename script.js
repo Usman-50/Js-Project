@@ -43,8 +43,6 @@ function displayQuestion(index) {
     currentQuestion.option.forEach((optionDisplay) => {
         option.innerHTML += `<button class="option">${optionDisplay}</button>`
     });
-    // correctOption.innerText = currentQuestion.correctOption
-    
 }
 displayQuestion(index)
 option.addEventListener("click" , (e) =>{
@@ -53,7 +51,7 @@ option.addEventListener("click" , (e) =>{
         console.log(selectedOption)
         let correctAnswer = questionBank[index].correctOption
         console.log(correctOption)
-        if (selectedOption === correctOption) {
+        if (selectedOption === correctAnswer) {
             correctOption.innerText = "correct"
         }
         else {
