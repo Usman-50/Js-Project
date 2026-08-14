@@ -51,7 +51,7 @@ option.addEventListener("click" , (e) =>{
     if (e.target.classList.contains("option")) {
         let selectedOption = e.target.innerText
         console.log(selectedOption)
-        let correctOption = questionBank[index].correctOption
+        let correctAnswer = questionBank[index].correctOption
         console.log(correctOption)
         if (selectedOption === correctOption) {
             correctOption.innerText = "correct"
